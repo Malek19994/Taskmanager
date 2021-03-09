@@ -1,7 +1,9 @@
-import { combineReducers } from "redux"
-import errorsReducers from "./errorsReducers";
+import { combineReducers } from "redux";
+import errorsReducer from "./errorsReducer";
+import ProjectTaskReducer from "./ProjectTaskReducer";
 
 export default combineReducers({
-    //
-    errors: errorsReducers
+  //
+  errors: errorsReducer,
+  project_task: ProjectTaskReducer
 });
